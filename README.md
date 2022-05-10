@@ -3,6 +3,38 @@ This project is a simple template for an embeddable React widget that can be ins
 
 Both synchronous and asynchronous loading is supported.
 
+# Running the Project Backend
+## Restful-api
+```
+$ cd Restful-api
+```
+## install 
+```
+$ npm insatll 
+```
+## install nodemon
+```
+$ npm insatll nodemon
+```
+## run api
+```
+$ nodemon index
+```
+# Running the Project Frontend
+## check file locate
+```
+$ cd ..
+```
+## install 
+```
+$ npm insatll 
+```
+## run 
+```
+$ npm start
+```
+
+
 # Overview
 1. The widget is instantiated when the .js package is loaded
 2. The host page supplies a **name** and a **targetElementId**
