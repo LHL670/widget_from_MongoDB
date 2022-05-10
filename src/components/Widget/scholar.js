@@ -37,7 +37,7 @@ class ScholarWidget extends React.Component {
 		timeStamp = ts.afterHourMinuteSecond(0, 0, 86400)
 		console.log(timeStamp);
 
-		cookies.remove(id);
+		// cookies.remove(id);
 
 		async function setdata(id, self) {
 			try {
