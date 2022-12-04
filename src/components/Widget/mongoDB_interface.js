@@ -1,7 +1,7 @@
 const { MongoClient } = require("mongodb");
 // Connection URI
 const uri =
-    "mongodb://reactInterface:reactInterfacepwd@120.126.17.90:27017/?authSource=admin";
+    "mongodb://cgu:cgu@0.tcp.jp.ngrok.io:17496/?authSource=admin";
 // Create a new MongoClient
 const client = new MongoClient(uri);
 const ID = "TMDQH_wAAAAJ"
@@ -13,7 +13,7 @@ async function run(userID) {
         // Establish and verify connection
         await client.db("admin").command({ ping: 1 });
         console.log("Connected successfully to server");
-        const db = client.db("CGUScholar")
+        const db = client.db("CGUScholar_com")
         userProfile = await db.collection('cguscholar').findOne({ _id: userID });
         return userProfile
 
