@@ -1,7 +1,8 @@
 const { MongoClient } = require("mongodb");
 // Connection URI
 const uri =
-    "mongodb://cgu:cgu@0.tcp.jp.ngrok.io:17394/?authSource=admin";
+    "mongodb://cgu:cgu@0.tcp.jp.ngrok.io:16896/?authSource=admin";
+//const uri = "mongodb+srv://CGUScholar:cguscholarpwd@cluster0.hvf4e.mongodb.net/CGUScholar_com?retryWrites=true&w=majority";
 // Create a new MongoClient
 const client = new MongoClient(uri);
 const ID = "TMDQH_wAAAAJ"

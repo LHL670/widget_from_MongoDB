@@ -6,10 +6,11 @@ const mongoose = require('mongoose');
 const app = express();
 
 // connect to mongodb
-mongoose.connect('mongodb://cgu:cgu@0.tcp.jp.ngrok.io:17394/CGUScholar_com?authSource=admin');
+mongoose.connect('mongodb://cgu:cgu@0.tcp.jp.ngrok.io:16896/CGUScholar_com?authSource=admin');
 
 // mongoose.connect('mongodb://reactInterface:reactInterfacepwd@120.126.17.90:27017/CGUScholar?authSource=admin');
-// mongoose.connect('mongodb+srv://CGUScholar:cguscholarpwd@cluster0.hvf4e.mongodb.net/CGUScholar?retryWrites=true&w=majority');
+//online
+//mongoose.connect('mongodb+srv://CGUScholar:cguscholarpwd@cluster0.hvf4e.mongodb.net/CGUScholar_com?retryWrites=true&w=majority');
 mongoose.Promise = global.Promise;
 
 app.use(express.static('public'));
